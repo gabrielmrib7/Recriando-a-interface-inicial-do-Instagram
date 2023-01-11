@@ -12,27 +12,28 @@
 <body>
 
     <section class="container">
-        <div class="pitch"></div>
+        <div class="pitch">
+            <img 
+            src="static/img/screenshot1.png"
+            />
+
+        </div>
         <div class="form">
         <form>
-            <img src="static/img/logo-instagram.png" alt="Instagram" />
-            <input
-                type="text"
-                name="uname"
-                placeholder="Telefone, nome de usuário ou email"
-            />
+            <img class="logo" src="static/img/logo-instagram.png" alt="Instagram" />
             <input type="text" name="uname" placeholder="Telefone, nome de usuário ou email" />
             <input type="Senha" name="Senha" placeholder="Senha" />
-            <button type="button">Entrar</button>
+            <button type="button" disabled>Entrar</button>
 
-            <div class="separator">ou</div>
-            <a href="/" class="login-with-facebook">Entrar com Facebook</a>
+            <div class="separator">OU</div>
+            <a href="/" class="login-with-facebook"> <img class="facebook" src="static/img/fb-icon.png" />Entrar com o Facebook</a>
             <a href="/" class="forgot-password">Esqueceu a senha?</a>
         </form>
         <div class="signup">
             <p>Não tem uma conta? <a href="/">Cadastre-se</a></p>
         </div>
         <div class="get-app">
+            <p>Obtenha o aplicativo.</p>
             <a href="/">
                 <img src="static/img/android.png" alt="Disponível no Google Play" />
                 <img src="static/img/microsoft.png" alt="Baixe da Microsoft" />
