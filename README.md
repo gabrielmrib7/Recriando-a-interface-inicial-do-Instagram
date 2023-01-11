@@ -1,5 +1,5 @@
-# Projeto - Interface inicial do Instagram
+# Projeto -  Recriando a interface inicial do Instagram
 
 Olá!
 
-Bem vindo ao meu projeto de recriação do Instagram, nele irei recriar a pagina inicial do Instagram utilizando HTML e CSS.
+Bem vindo ao meu projeto de recriação da página inicial do Instagram, nele irei recriar a pagina inicial do Instagram utilizando HTML e CSS.
