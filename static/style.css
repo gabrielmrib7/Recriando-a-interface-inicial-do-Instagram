@@ -1,5 +1,4 @@
 body {
-  overflow: hidden;
   margin: 0;
   padding: 0;
   background-color: #fafafa;
@@ -16,19 +15,36 @@ a {
   display: grid;
   grid-template-columns: 1fr 346px;
   column-gap: 1.25rem;
-  margin: 103px auto 128px;
+  margin: 103px auto 129px;
 }
 
+@media (max-height: 880px) {
+  .container {
+    margin: 27px 275px 32px;
+  }
+}
 .pitch {
   background: url("./img/celular.png") no-repeat center;
   position: relative;
 }
 .pitch img {
   position: absolute;
-  top: 30px;
+  top: 32px;
   left: 125px;
 }
 
+@media (max-width: 880px) {
+  .pitch {
+    display: none;
+  }
+}
+@media (max-width: 880px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+}
 .form {
   margin-top: 11px;
   height: 581px;
@@ -113,6 +129,7 @@ a {
 .form form .forgot-password {
   color: #00376b;
   font-size: 12px;
+  margin: 0 0 5px;
 }
 .form .signup {
   border: 1px solid rgb(219, 219, 219);
@@ -135,7 +152,7 @@ a {
 
 .footer {
   text-align: center;
-  width: 1264px;
+  width: auto;
   margin: 0px auto 64px;
 }
 .footer a {

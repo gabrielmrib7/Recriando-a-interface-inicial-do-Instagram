@@ -1,5 +1,4 @@
 body {
-  overflow: hidden;
   margin: 0;
   padding: 0;
   background-color: #fafafa;
@@ -16,24 +15,41 @@ a {
   display: grid;
   grid-template-columns: 1fr 350px;
   column-gap: 1.25rem;
-  margin: 100px auto 125px;
+  margin: 99px auto 125px;
   align-items: center;
   padding: 10px 0 10px 0;
 }
 
+@media (max-height: 875px) {
+  .container {
+    margin: 23px 276px 32px;
+  }
+}
 .pitch {
   background: url("./img/celular.png") no-repeat center;
   position: relative;
   left: 13px;
   width: 380px;
-  height: 580px;
+  height: 582px;
 }
 .pitch img {
   position: absolute;
-  top: 24px;
+  top: 26px;
   left: 112px;
 }
 
+@media (max-width: 880px) {
+  .pitch {
+    display: none;
+  }
+}
+@media (max-width: 880px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+}
 .form {
   margin-top: 11px;
   text-align: center;
@@ -77,8 +93,10 @@ a {
   color: #0095F6;
 }
 .form form button {
+  font-family: Helvetica, Arial, sans-serif;
   appearance: none;
   background-color: #0095F6;
+  text-overflow: ellipsis;
   height: 32px;
   width: 205px;
   border: 0px;
@@ -102,7 +120,7 @@ a {
   text-align: center;
   position: relative;
   bottom: 2px;
-  width: 1264px;
+  width: auto;
   height: 53px;
   margin: 0px auto 64px;
 }
@@ -116,4 +134,12 @@ a {
   color: #8e8e8e;
   font-size: 12px;
   margin: 12px 0 12px 0;
+}
+@media (max-width: 880px) {
+  .footer {
+    bottom: unset;
+    position: unset;
+    height: unset;
+    margin-bottom: unset;
+  }
 }/*# sourceMappingURL=style2.css.map */

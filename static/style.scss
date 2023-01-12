@@ -1,11 +1,13 @@
 body {
-    overflow: hidden;
+    
     margin: 0;
     padding: 0;
     background-color: #fafafa;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     color: #262626;
 }
+
+
 
 a{
     text-decoration: none;
@@ -16,7 +18,14 @@ a{
     display: grid;
     grid-template-columns: 1fr 346px;
     column-gap: 1.25rem;
-    margin: 103px auto 128px;
+    margin: 103px auto 129px;
+    
+}
+
+@media (max-height:880px) {
+    .container{
+        margin: 27px 275px 32px;
+    }
     
 }
 
@@ -24,14 +33,36 @@ a{
     
     background: url('./img/celular.png') no-repeat center;
     position: relative;
+    
 
     img {
         position: absolute;
-        top: 30px;
+        top: 32px;
         left: 125px;
+    }
+
+    
+    
+}
+@media (max-width: 880px) {
+    .pitch {
+        display: none;
+    }
+}
+
+@media (max-width: 880px) {
+    .container {
+        display: flex;
+        justify-content: center;
+
+        width: auto;
     }
     
 }
+
+
+
+
 
 .form{
     margin-top: 11px;
@@ -87,6 +118,8 @@ a{
                 background-color: #4DB5F9;
             }
 
+            
+
         }
 
         .separator{
@@ -131,8 +164,12 @@ a{
         .forgot-password{
             color: #00376b;
             font-size: 12px;
+            margin: 0 0 5px;
+
         }
     }
+    
+
     .signup
 {
     border: 1px solid rgb(219,219,219);
@@ -157,14 +194,18 @@ a{
     }
 }
 
+    
+
+
 
     
 
 
 }
+
 .footer {
     text-align: center;
-    width: 1264px;
+    width: auto;
     margin: 0px auto 64px;
 
     a{
@@ -180,4 +221,10 @@ a{
         margin: 12px 0 12px 0;
 
     }
+
+    
+
+    
+
+    
 }
