@@ -1,4 +1,5 @@
 body {
+  overflow: hidden;
   margin: 0;
   padding: 0;
   background-color: #fafafa;
@@ -13,9 +14,9 @@ a {
 .container {
   width: 773px;
   display: grid;
-  grid-template-columns: 1fr 350px;
+  grid-template-columns: 1fr 346px;
   column-gap: 1.25rem;
-  margin: 120px auto 130px;
+  margin: 103px auto 128px;
 }
 
 .pitch {
@@ -24,18 +25,19 @@ a {
 }
 .pitch img {
   position: absolute;
-  top: 35px;
-  left: 123px;
+  top: 30px;
+  left: 125px;
 }
 
 .form {
   margin-top: 11px;
+  height: 581px;
   text-align: center;
 }
 .form form {
   border: 1px solid rgb(219, 219, 219);
   background-color: white;
-  padding: 1.25rem 2.5rem;
+  padding: 15px 2.5rem 10px;
   margin: 0px 0px 10px;
 }
 .form form .logo {
@@ -70,9 +72,9 @@ a {
   cursor: pointer;
   font-style: inherit;
   color: white;
-  font-weight: bold;
+  font-weight: 600;
   box-sizing: border-box;
-  margin-top: 12px;
+  margin: 8px 0 8px;
   padding: 16 7;
 }
 .form form button:disabled {
@@ -81,9 +83,9 @@ a {
 .form form .separator {
   color: #8e8e8e;
   text-transform: uppercase;
-  font-weight: 500;
-  font-size: 13px;
-  margin: 1.25rem 0 1.875rem;
+  font-weight: 600;
+  font-size: 12px;
+  margin: 10px 0 26px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -99,7 +101,7 @@ a {
   font-weight: 500;
   display: flex;
   align-items: center;
-  margin: 0px auto 18px;
+  margin: 0px auto 15px;
   justify-content: center;
   font-size: 14px;
 }
@@ -110,13 +112,13 @@ a {
 }
 .form form .forgot-password {
   color: #00376b;
-  font-size: 13px;
+  font-size: 12px;
 }
 .form .signup {
   border: 1px solid rgb(219, 219, 219);
   background-color: white;
   padding: 10px 0px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 14px;
 }
 .form .signup a {
@@ -134,15 +136,16 @@ a {
 .footer {
   text-align: center;
   width: 1264px;
-  margin: 0px auto 52px;
+  margin: 0px auto 64px;
 }
 .footer a {
   color: #8e8e8e;
   font-size: 12px;
-  margin: 0 6px 15px;
+  margin: 0 6px 5px;
   display: inline-block;
 }
 .footer .copy {
   color: #8e8e8e;
   font-size: 12px;
+  margin: 12px 0 12px 0;
 }/*# sourceMappingURL=style.css.map */

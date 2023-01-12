@@ -7,7 +7,7 @@
     <link rel="icon" href="./static/img/favicon.png" type="image/png">
     <title>Instagram</title>
 
-    <link href="static/style2.css" rel="stylesheet" /> 
+    <link href="static/style.css" rel="stylesheet" /> 
 </head>
 
 <body>
@@ -22,20 +22,24 @@
         <div class="form">
         <form>
             <img class="logo" src="static/img/logo-instagram.png" alt="Instagram" />
-            <span class="circle-image">
-                <img class="eu" src="static/img/eu.jpeg" alt="eu" />
-            </span>
-            
-            
-            <button type="button">Continuar como bieeo</button>
+            <input type="text" name="uname" placeholder="Telefone, nome de usuário ou email" />
+            <input type="Senha" name="Senha" placeholder="Senha" />
+            <button type="button" disabled>Entrar</button>
 
-            <div class="notbieeo">
-            <p>Não é bieeo? <a href="page2.html">Trocar de conta</a></p>
-            </div>
-
-            
+            <div class="separator">OU</div>
+            <a href="/" class="login-with-facebook"> <img class="facebook" src="static/img/fb-icon.png" />Entrar com o Facebook</a>
+            <a href="/" class="forgot-password">Esqueceu a senha?</a>
         </form>
-        
+        <div class="signup">
+            <p>Não tem uma conta? <a href="/">Cadastre-se</a></p>
+        </div>
+        <div class="get-app">
+            <p>Obtenha o aplicativo.</p>
+            <a href="/">
+                <img src="static/img/android.png" alt="Disponível no Google Play" />
+                <img src="static/img/microsoft.png" alt="Baixe da Microsoft" />
+            </a>
+        </div>
         </div>
     </section>
 
