@@ -22,7 +22,7 @@ a {
 
 @media (max-height: 875px) {
   .container {
-    margin: 23px 276px 32px;
+    margin: 23px auto 32px;
   }
 }
 .pitch {
@@ -38,18 +38,6 @@ a {
   left: 112px;
 }
 
-@media (max-width: 880px) {
-  .pitch {
-    display: none;
-  }
-}
-@media (max-width: 880px) {
-  .container {
-    display: flex;
-    justify-content: center;
-    width: auto;
-  }
-}
 .form {
   margin-top: 11px;
   text-align: center;
@@ -59,11 +47,15 @@ a {
   background-color: white;
   padding: 20px 43px 10px;
   margin: 12px 0px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .form form .circle-image {
   align-items: center;
-  width: 263px;
-  height: 1px;
+  width: auto;
+  height: auto;
 }
 .form form .circle-image .eu {
   align-items: center;
@@ -116,6 +108,33 @@ a {
   background-color: #4DB5F9;
 }
 
+@media (max-width: 880px) {
+  .pitch {
+    display: none;
+  }
+}
+@media (max-width: 880px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-height: 100%;
+    height: 735px;
+    max-width: 100%;
+    flex-direction: row;
+    padding-bottom: 32px;
+  }
+}
+@media (max-width: 450px) {
+  .form {
+    height: unset;
+    max-height: 100%;
+  }
+  .form form {
+    border: 0px solid;
+    background-color: unset;
+  }
+}
 .footer {
   text-align: center;
   position: relative;

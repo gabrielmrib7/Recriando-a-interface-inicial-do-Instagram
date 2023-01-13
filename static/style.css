@@ -20,7 +20,7 @@ a {
 
 @media (max-height: 880px) {
   .container {
-    margin: 27px 275px 32px;
+    margin: 27px auto 32px;
   }
 }
 .pitch {
@@ -33,21 +33,10 @@ a {
   left: 125px;
 }
 
-@media (max-width: 880px) {
-  .pitch {
-    display: none;
-  }
-}
-@media (max-width: 880px) {
-  .container {
-    display: flex;
-    justify-content: center;
-    width: auto;
-  }
-}
 .form {
   margin-top: 11px;
   height: 581px;
+  width: 348px;
   text-align: center;
 }
 .form form {
@@ -150,6 +139,47 @@ a {
   height: 40px;
 }
 
+@media (max-width: 880px) {
+  .pitch {
+    display: none;
+  }
+}
+@media (max-width: 880px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-height: 100%;
+    height: 735px;
+    max-width: 100%;
+    flex-direction: row;
+    padding-bottom: 32px;
+  }
+}
+@media (max-width: 450px) {
+  .form {
+    height: unset;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 100%;
+  }
+  .form form {
+    border: 0px solid;
+    background-color: unset;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .form .signup {
+    flex-direction: column;
+    display: flex;
+    border: 0px solid;
+    background-color: unset;
+  }
+}
 .footer {
   text-align: center;
   width: auto;
